@@ -1,7 +1,13 @@
 defaultTasks 'clean', 'test', 'aggregate'
 
 repositories {
-    mavenCentral()
+    maven {
+        url 'https://artifactory.example.com/libs/'
+        credentials {
+            username "myUsername"
+            password "myPassword"
+        }
+    }
 }
 
 buildscript {
