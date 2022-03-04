@@ -64,6 +64,3 @@ serenity {
 gradle.startParameter.continueOnFailure = true
 
 test.finalizedBy(aggregate)
-
-user.name="test"
-user.pwd="test2"
